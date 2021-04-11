@@ -1,7 +1,7 @@
 {
   "name": "@clovergaze/simple-timer",
   "version": "0.1.0",
-  "description": "A simple Node module that implements timer functionality.",
+  "description": "A simple Node module that implements a timer with logging.",
   "author": "Johannes Hillert <johannes.hillert@infokin.org>",
   "license": "MIT",
   "keywords": [
@@ -16,29 +16,29 @@
     "build": "grunt",
     "watch": "grunt watch",
     "clean": "grunt clean",
-    "test": "mocha test/*.ts --compilers ts:ts-node/register",
+    "test": "mocha test/*.ts --require ts-node/register",
     "coverage": "istanbul cover _mocha -- test/*.js && remap-istanbul -i coverage/coverage.json -o coverage/html-report -t html",
     "release": "grunt release"
   },
   "dependencies": {
-    "@clovergaze/simple-logger": "^0.1.5"
+    "@clovergaze/simple-logger": "^1.0.0"
   },
   "devDependencies": {
-    "@types/chai": "^4.0.0",
-    "@types/mocha": "^2.2.41",
-    "@types/node": "^7.0.31",
-    "chai": "^4.0.2",
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.1.0",
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.37",
+    "chai": "^4.3.4",
+    "grunt": "^1.3.0",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-ts": "^6.0.0-beta.16",
-    "grunt-tslint": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-ts": "^6.0.0-beta.22",
+    "grunt-tslint": "^5.0.2",
     "istanbul": "^0.4.5",
-    "mocha": "^3.4.2",
-    "remap-istanbul": "^0.9.5",
-    "ts-node": "^3.1.0",
-    "tslint": "^5.4.3",
-    "typescript": "^2.3.4"
+    "mocha": "^8.3.2",
+    "remap-istanbul": "^0.13.0",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
   }
 }
