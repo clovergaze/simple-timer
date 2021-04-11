@@ -1,6 +1,6 @@
 {
   "name": "@clovergaze/simple-timer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple Node module that implements a timer with logging.",
   "keywords": [
     "timer"
