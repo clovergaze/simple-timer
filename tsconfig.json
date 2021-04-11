@@ -5,8 +5,7 @@
     "moduleResolution": "Node",
     "alwaysStrict": true,
     "removeComments": true,
-    "declaration": true,
-    "sourceMap": false
+    "declaration": true
   },
   "include": [
     "src/*.ts",

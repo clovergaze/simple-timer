@@ -14,11 +14,12 @@
   "main": "index.js",
   "scripts": {
     "build": "grunt",
+    "build:prod": "grunt build:prod",
     "watch": "grunt watch",
     "clean": "grunt clean",
     "test": "mocha",
     "coverage": "istanbul cover _mocha -- test/*.js && remap-istanbul -i coverage/coverage.json -o coverage/html-report -t html",
-    "release": "grunt release"
+    "release": "npm run build:prod && grunt release"
   },
   "dependencies": {
     "@clovergaze/simple-logger": "^1.0.0"

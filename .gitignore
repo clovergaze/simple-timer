@@ -1,9 +1,10 @@
 .idea
 .tscache
 node_modules
+coverage
 
-src/*.js
+src/*.js*
 src/*.d.ts
 
-test/*.js
+test/*.js*
 test/*.d.ts

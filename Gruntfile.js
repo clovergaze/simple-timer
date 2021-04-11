@@ -14,9 +14,12 @@ module.exports = function (grunt) {
             }
         },
         ts: {
-            default: {
+            dev: {
+                tsconfig: true
+            },
+            prod: {
                 options: {
-                    verbose: false
+                    sourceMap: false
                 },
                 tsconfig: true
             }
@@ -33,9 +36,10 @@ module.exports = function (grunt) {
             default: {
                 src: [
                     ".tscache",
-                    "src/*.js",
+                    "coverage",
+                    "src/*.js*",
                     "src/*.d.ts",
-                    "test/*.js",
+                    "test/*.js*",
                     "test/*.d.ts"
                 ]
             }
@@ -65,8 +69,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-watch");
 
-    grunt.registerTask("build", ["tslint", "clean", "ts"]);
+    grunt.registerTask("build:dev", ["tslint", "clean", "ts:dev"]);
+    grunt.registerTask("build:prod", ["tslint", "clean", "ts:prod"]);
     grunt.registerTask("release", ["copy"]);
 
-    grunt.registerTask("default", ["build"]);
+    grunt.registerTask("default", ["build:dev"]);
 };
