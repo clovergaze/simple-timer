@@ -65,7 +65,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-watch");
 
-    grunt.registerTask("build", ["tslint", "ts"]);
+    grunt.registerTask("build", ["tslint", "clean", "ts"]);
     grunt.registerTask("release", ["copy"]);
 
     grunt.registerTask("default", ["build"]);
