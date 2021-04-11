@@ -16,7 +16,7 @@
     "build": "grunt",
     "watch": "grunt watch",
     "clean": "grunt clean",
-    "test": "mocha test/*.ts --require ts-node/register",
+    "test": "mocha",
     "coverage": "istanbul cover _mocha -- test/*.js && remap-istanbul -i coverage/coverage.json -o coverage/html-report -t html",
     "release": "grunt release"
   },
