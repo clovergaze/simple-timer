@@ -1,11 +1,8 @@
-import {EventEmitter} from "events";
-
-import {SimpleLogger} from "@clovergaze/simple-logger";
-
-import Timer = NodeJS.Timer;
+import { EventEmitter } from "events";
+import { SimpleLogger } from "@clovergaze/simple-logger";
 
 export class SimpleTimer extends EventEmitter {
-    private timer: Timer;
+    private timer: NodeJS.Timer;
     private currentState: SimpleTimer.State;
     private remainingTime: number;
     private logger: SimpleLogger;

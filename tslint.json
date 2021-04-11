@@ -7,7 +7,6 @@
     ],
     "no-namespace": false,
     "no-unused-expression": false,
-    "ordered-imports": false,
     "quotemark": [
       true,
       "double"

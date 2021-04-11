@@ -1,8 +1,5 @@
-import * as chai from "chai";
-const expect = chai.expect;
-
-import {SimpleTimer} from "../src";
-
+import { expect } from "chai";
+import { SimpleTimer } from "../src";
 import Timer = NodeJS.Timer;
 
 describe("Simple Timer", () => {
