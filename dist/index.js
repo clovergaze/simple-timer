@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SimpleTimer = void 0;
 const events_1 = require("events");
 const simple_logger_1 = require("@clovergaze/simple-logger");
 class SimpleTimer extends events_1.EventEmitter {
@@ -87,7 +88,7 @@ class SimpleTimer extends events_1.EventEmitter {
 }
 exports.SimpleTimer = SimpleTimer;
 (function (SimpleTimer) {
-    var State;
+    let State;
     (function (State) {
         State[State["STOPPED"] = 0] = "STOPPED";
         State[State["RUNNING"] = 1] = "RUNNING";

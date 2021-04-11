@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "target": "ES2016",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "alwaysStrict": true,
     "removeComments": true,
-    "sourceMap": true
+    "declaration": true,
+    "sourceMap": false
   },
   "include": [
     "src/*",

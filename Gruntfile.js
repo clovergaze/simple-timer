@@ -25,7 +25,7 @@ module.exports = function (grunt) {
             default: {
                 expand: true,
                 cwd: "src",
-                src: ["*.js", "*.ts"],
+                src: ["*.js", "*.d.ts"],
                 dest: "dist/"
             }
         },
@@ -33,8 +33,10 @@ module.exports = function (grunt) {
             default: {
                 src: [
                     ".tscache",
-                    "src/*.js*",
-                    "test/*.js*"
+                    "src/*.js",
+                    "src/*.d.ts",
+                    "test/*.js",
+                    "test/*.d.ts"
                 ]
             }
         },
