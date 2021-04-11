@@ -2,16 +2,29 @@
   "name": "@clovergaze/simple-timer",
   "version": "0.1.0",
   "description": "A simple Node module that implements a timer with logging.",
-  "author": "Johannes Hillert <johannes.hillert@infokin.org>",
-  "license": "MIT",
   "keywords": [
     "timer"
   ],
+  "homepage": "https://github.com/clovergaze/simple-timer#readme",
+  "bugs": {
+    "url": "https://github.com/clovergaze/simple-timer/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/clovergaze/simple-timer.git"
   },
+  "license": "MIT",
+  "author": {
+    "name": "Johannes Hillert",
+    "email": "johannes.hillert@infokin.org",
+    "url": "https://www.infokin.org/"
+  },
   "main": "index.js",
+  "files": [
+    "index.d.ts",
+    "dist/index.d.ts",
+    "dist/index.js"
+  ],
   "scripts": {
     "build": "grunt",
     "build:prod": "grunt build:prod",
